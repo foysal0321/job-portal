@@ -1,7 +1,12 @@
 import React from 'react';
 import './Style.css'
+import toast, { Toaster } from 'react-hot-toast';
+import ApplyBtn from './ApplyBtn';
+import { Link } from 'react-router-dom';
 
 const Alljobs = () => {
+
+        
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-1 alljobs">
             <div className="card  w-80 bg-base-300 shadow-xl">
@@ -13,7 +18,9 @@ const Alljobs = () => {
             </div>   
             <p>New York, USA</p>
             <div className="card-actions justify-end">
-            <button className="btn btn-primary">Apply Now</button>
+            <Link to='/apply'> 
+         <button className="btn btn-primary">Apply Now</button>
+         </Link>
             </div>
         </div>
         </div>
@@ -26,7 +33,9 @@ const Alljobs = () => {
             </div>   
             <p>New York, USA</p>
             <div className="card-actions justify-end">
-            <button className="btn btn-primary">Apply Now</button>
+            <Link to='/apply'> 
+         <button className="btn btn-primary">Apply Now</button>
+         </Link>
             </div>
         </div>
         </div>
@@ -39,7 +48,9 @@ const Alljobs = () => {
             </div>   
             <p>New York, USA</p>
             <div className="card-actions justify-end">
-            <button className="btn btn-primary">Apply Now</button>
+           <Link to='/apply'> 
+         <button className="btn btn-primary">Apply Now</button>
+         </Link>
             </div>
         </div>
         </div>

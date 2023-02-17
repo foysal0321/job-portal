@@ -10,9 +10,9 @@ const LogIn = () => {
   const [err,seterr] = useState('')
   const navigate = useNavigate();
   const location = useLocation();
- // const from = location.state?.from?.pathname || '/' ;
+ const from = location.state?.from?.pathname || '/' ;
 
-const signinBtn=(e)=>{
+  const signinBtn=(e)=>{
   e.preventDefault();
 
   const form = e.target;
@@ -22,13 +22,13 @@ const signinBtn=(e)=>{
   signInUser(email,pass)
   .then(result=>{
     const user = result.user;
-    console.log(user);
+    //console.log(user);
     form.reset();
-   // navigate(from, {replace: true});
+    navigate(from, {replace: true});
     seterr('')
   })
   .catch(err=>{
-    console.error(err);
+    //console.error(err);
     seterr(err.message)
 }) 
 }
@@ -38,6 +38,7 @@ const signGoogle=()=>{
   signinGoogle(providerGoogle)
   .then(result=>{
       const user = result.user;
+      navigate(from, {replace: true});
       console.log(user);
   })
   .catch(err=>{

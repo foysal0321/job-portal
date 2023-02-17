@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../context/Usecontext';
 
 const Navbar = () => {
+  const {user, logOutUser} = useContext(AuthContext)
+  //console.log(user?.email);
     return (
         <div className="navbar bg-base-100">
         <div className="navbar-start">
@@ -19,15 +22,23 @@ const Navbar = () => {
             <li>
             <Link >Contact Us</Link>
              </li>           
-            <li>
-            <Link to='/signup'>SignUp</Link>
-            </li>
-            <li>
-            <Link to='/signin'>SignIn</Link>
-            </li>
+             {
+                user ? 
+                <li> <button onClick={logOutUser} className='btn btn-sm btn-info lg:mt-2 py-2 text-white rounded-md'>Logout</button> </li>
+                : 
+                <>
+                 <li>
+                <Link to='/signup'>SignUp</Link>
+                </li>
+                <li>
+                <Link to='/signin'>SignIn</Link>
+                </li>
+            </>
+              }
             </ul>
           </div>
-          <Link to='/' className="btn btn-ghost normal-case text-xl">daisyUI</Link>
+          <Link to='/' className="btn btn-ghost normal-case text-3xl font-semibold">Job-Portal</Link>
+         
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -40,14 +51,29 @@ const Navbar = () => {
             <li>
             <Link >Contact Us</Link>
              </li>           
-            <li>
-            <Link to='/signup'>SignUp</Link>
-            </li>
-            <li>
-            <Link to='/signin'>SignIn</Link>
-            </li>
+              {
+                user ? 
+                <li> <button onClick={logOutUser} className='btn btn-sm btn-info lg:mt-2 py-2 text-white rounded-md'>Logout</button> </li>
+                : 
+                <>
+                 <li>
+                <Link to='/signup'>SignUp</Link>
+                </li>
+                <li>
+                <Link to='/signin'>SignIn</Link>
+                </li>
+            </>
+              }
+             
           </ul>
         </div>
+        {
+          user ? 
+          <div className="navbar-end">
+        <a className="mx-5 font-medium">{user?.displayName}</a>
+      </div>  : 
+      null
+        }
         
       </div>
            

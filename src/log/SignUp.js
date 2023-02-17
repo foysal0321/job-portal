@@ -9,7 +9,8 @@ const SignUp = () => {
   const providerGoogle = new GoogleAuthProvider();
   const [err,seterr] = useState('');
   const navigate = useNavigate();
- // const location = useLocation();
+  const location = useLocation();
+  const form =location.state?.from?.pathname || '/'
 
   const createBtn=(e)=>{
     e.preventDefault();
@@ -19,7 +20,6 @@ const SignUp = () => {
     const email = from.email.value;
     const pass = from.pass.value; 
 
-//console.log(name,email,pass);
 
    //firebase deploy 
     createUser(email,pass)
@@ -29,7 +29,7 @@ const SignUp = () => {
         profileUpdate(name)
         from.reset()
         seterr('');
-        //navigate(form, {replace: true});
+        navigate(form, {replace: true});
     })
     .catch(err=>{
         console.error(err);
@@ -43,7 +43,6 @@ const profileUpdate=(name)=>{
   }
   upProfile(profile)
   .then(()=>{
-
   })
   .catch(err=>{
       console.error(err);
@@ -55,7 +54,8 @@ const signGoogle=()=>{
   signinGoogle(providerGoogle)
   .then(result=>{
       const user = result.user;
-      console.log(user);
+      navigate(form, {replace: true})
+      //console.log(user);
   })
   .catch(err=>{
       console.errorg(err);

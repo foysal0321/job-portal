@@ -23,6 +23,7 @@ const Cetegori = () => {
                     </Link>
                 </div></div>
             </div>
+      
               <Outlet />
         </div>
     );
