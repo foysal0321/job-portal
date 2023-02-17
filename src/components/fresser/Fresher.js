@@ -4,6 +4,7 @@ const Fresher = () => {
     return (
         <div>
             Fresher
+           
         </div>
     );
 };
