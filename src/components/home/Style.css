@@ -3,6 +3,9 @@
     height: 580px;
     background-color: cornflowerblue;
 }
+.dot{
+    color: cornflowerblue;
+}
 .info{
     max-width: 800px;
     margin: 0 auto;
