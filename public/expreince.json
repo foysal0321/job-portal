@@ -1,0 +1,50 @@
+[
+    {
+        "position" : "Open Source Interactive Developer",
+        "company" : "Walmart Inc. (WMT)",
+        "logo" : "https://png.pngtree.com/png-clipart/20201208/original/pngtree-red-and-black-logo-png-image_5517319.jpg",
+        "location" : "Western City, UK",
+        "cetegory" : "fresher",
+        "day" : 7
+    },
+    {
+        "position" : "Software Development",
+        "company" : "Amazon.com Inc. (AMZN)",
+        "logo" : "https://png.pngtree.com/png-clipart/20201208/original/pngtree-red-and-black-logo-png-image_5517319.jpg",
+        "location" : "WESTERN CITY, UK",
+        "cetegory" : "expreince",
+        "day" : 8
+    },
+    {
+        "position" : "Full Stack Development",
+        "company" : "Google",
+        "logo" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF5zAa1Qoj6t1Mni_-A9zvCKNPTzQD0VYre8RDvBiBrg&s",
+        "location" : "USA",
+        "cetegory" : "expreince",
+        "day" : 4
+    },
+    {
+        "position" : "Androent Development",
+        "company" : "AVER",
+        "logo" : "https://img.lovepik.com/element/45013/6497.png_300.png",
+        "location" : "India",
+        "cetegory" : "fresher",
+        "day" : 7
+    },
+    {
+        "position" : "PHP Programming ",
+        "company" : "Microsoft",
+        "logo" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOJ4YBuu2UxlyyNwJa8cl6kv_A6zMdwEdg68-H9oc&s",
+        "location" : "New york",
+        "cetegory" : "fresher",
+        "day" : 10
+    },
+    {
+        "position" : "Python Development",
+        "company" : "Facebook",
+        "logo" : "https://e7.pngegg.com/pngimages/991/568/png-clipart-facebook-logo-computer-icons-facebook-logo-facebook-thumbnail.png",
+        "location" : "NEW YORK ",
+        "cetegory" : "fresher",
+        "day" : 5
+    }
+]

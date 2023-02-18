@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../../context/Usecontext';
 import Alljobs from '../cetegori/Alljobs';
 import Cetegori from '../cetegori/Cetegori';
+import Expereince from '../experience/Expereince';
+import Fresher from '../fresser/Fresher';
+import TopIT from '../topIT/TopIT';
 import './Style.css'
 
 const Home = () => {
@@ -20,9 +23,30 @@ const Home = () => {
              <a href='#cetegori' ><button className='btn btn-secondary mt-5 mx-3' >Want a job</button></a> 
              </div>
             </div>
-             <div id="cetegori"><Cetegori /></div> 
-             
-                <Alljobs />
+             <div id="cetegori">
+             <div className="jobinfo">
+                <h1 className='text-4xl py-3 font-semibold p-8'>Discover jobs for you</h1>           
+                    <a href='#fresher'>
+                      <button className='btn btn-error btn-sm '>Fresher</button>
+                    </a>
+                    
+                    <a href='#expreince'>
+                      <button className='btn btn-error btn-sm '>Expreince</button>
+                    </a>
+                    <a href='#topit'>
+                      <button className='btn btn-error btn-sm '>Top IT</button>
+                    </a>
+                </div>
+                </div> 
+             <h1 id='fresher' className='text-3xl p-3 py-6'>Fresher Jobs</h1> 
+              <Alljobs />
+              <div className="jobitem">
+             <h1 id='expreince' className='text-3xl p-4 py-12'>Expreince Jobs</h1> 
+              <Expereince />
+             <h1 id='topit' className='text-3xl p-4 py-12'>Top IT </h1> 
+              <TopIT />
+             </div>
+               
            
             
         </div>

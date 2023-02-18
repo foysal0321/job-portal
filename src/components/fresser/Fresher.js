@@ -1,10 +1,12 @@
 import React from 'react';
+import Alljobs from '../cetegori/Alljobs';
 
 const Fresher = () => {
     return (
         <div>
-            Fresher
-           
+           {/* <h1 className='text-3xl'>Fresher Jobs</h1>  */}
+           {/* <Alljobs /> */}
+          
         </div>
     );
 };

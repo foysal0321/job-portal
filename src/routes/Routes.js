@@ -5,6 +5,9 @@ import Jobpost from "../components/cetegori/jobPost/Jobpost";
 import Expereince from "../components/experience/Expereince";
 import Fresher from "../components/fresser/Fresher";
 import Home from "../components/home/Home";
+import Details from "../components/topIT/Details";
+import Leadsoft from "../components/topIT/Leadsoft";
+import Pridesys from "../components/topIT/Pridesys";
 import TopIT from "../components/topIT/TopIT";
 import LogIn from "../log/LogIn";
 import SignUp from "../log/SignUp";
@@ -50,6 +53,12 @@ export const router = createBrowserRouter([
                 path: '/apply',
                 element: <PrivetRout> <ApplyFrom /> </PrivetRout> 
             },
+            {
+                path: '/details/:id',
+                element: <Details />,
+                
+            }
+            
            
             
         ]

@@ -11,6 +11,7 @@ const Cetegori = () => {
                 <div className="x">
                 <h1 className='text-3xl py-3 font-semibold'>Discover jobs for you</h1>
                 <div className="list">
+                
                     <Link to='/fresher'>
                       <button className='btn btn-error btn-sm '>Fresher</button>
                     </Link>

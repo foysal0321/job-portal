@@ -1,0 +1,31 @@
+[
+    {
+        "id": 1,
+        "position" : "Front End Development",
+        "company" : "TigerIT",
+        "logo" : "https://png.pngtree.com/png-clipart/20201208/original/pngtree-red-and-black-logo-png-image_5517319.jpg",
+        "location" : "Dhaka",
+        "img" : "https://pridesys.com/wp-content/uploads/2022/08/tigerit-bangladesh-ltd-1.jpg"
+        
+    },
+    {
+        "id": 2,
+        "position" : "LeadSoft",
+        "company" : "LeadSoft",
+        "logo" : "https://png.pngtree.com/png-clipart/20201208/original/pngtree-red-and-black-logo-png-image_5517319.jpg",
+        "location" : "Dhaka",
+        "img" : "https://pridesys.com/wp-content/uploads/2022/08/leadsoft-bangladesh-ltd-1.jpg"
+        
+    },
+    {
+        "id" : 3,
+        "position" : "Full Stack Development",
+        "company" : "Pridesys IT Limited.",
+        "logo" : "https://img.lovepik.com/element/45013/6497.png_300.png",
+        "location" : "Dhaka,Bangladesh",
+        "img" : "https://pridesys.com/wp-content/uploads/2022/08/Pridesys-IT-Limited-1024x558.jpg"
+        
+    }
+  
+    
+]
